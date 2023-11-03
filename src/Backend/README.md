@@ -1,13 +1,20 @@
-# AuraSky - NFT Market
+# SEAZLE API
 
-**Back-end**
+## Postman Usage
 
-## Tech Stacks
-- 
-- 
-  
-## Setup Development Environment 
+Import postman.json to Postman.
+
+## Debug
+
+```bash
+npm i
+npm run dev
 ```
-git clone https://github.com/hoangrank1/AuraSky_NFT-Market
-cd AuraSky_NFT-Market/src/Backend
+
+## Release
+
+```bash
+npm i
+npm run build
+npm run start
 ```
