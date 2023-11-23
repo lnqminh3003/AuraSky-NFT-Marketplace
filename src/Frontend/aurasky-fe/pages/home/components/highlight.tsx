@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { HOST } from "../../../utils/constant";
-
+// import CardNFT from "./card-nfts";
+// import Loading from "./loading";
 
 export default function Highlight() {
     const [error, setError] = useState<any | null>(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
-
-    //TODO: fix modules
 
     useEffect(() => {
         fetch(`${HOST}/nft/get-all`)
@@ -23,5 +22,33 @@ export default function Highlight() {
                 }
             );
     }, []);
+
+    function sideScroll(
+        element: any,
+        direction: any,
+        speed: any,
+        distance: any,
+        step: any
+    ) {
+        let scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+            if (direction == "left") {
+                element.scrollLeft -= step;
+            } else {
+                element.scrollLeft += step;
+            }
+            scrollAmount += step;
+            if (scrollAmount >= distance) {
+                if (window !== undefined) {
+                    window.clearInterval(slideTimer);
+                }
+            }
+        }, speed);
+    }
 }
-//reorganized, delete later
+// const ScreenSizeDetector = require("screen-size-detector");
+// const screen = new ScreenSizeDetector();
+// let slideWidth = screen.width * 0.2;
+// screen.setMainCallback("widthchange", () => {
+//   slideWidth = screen.width * 0.2;
+// });
