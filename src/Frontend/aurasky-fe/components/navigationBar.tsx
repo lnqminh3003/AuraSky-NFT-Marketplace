@@ -510,3 +510,235 @@ const NavigationBar = (searchQuery: any) => {
                               stroke="#CD6116"
                               stroke-width="5.94955"
                             />{" "}
+                             <path
+                              d="M1749.88 1676.72L1940.86 1793.33L2046.16 2041.42L1749.88 1676.72ZM826.508 1399.47L12.0146 1910.53L265.465 1304.27L826.508 1399.47ZM758.088 1879.59L12.0146 1910.53L826.508 1399.47L758.088 1879.59ZM1682.65 1403.04L1731.43 1580.33L1495.83 1594.02L1682.65 1403.04ZM1495.83 1594.02L1422.65 1411.96L1682.65 1403.04L1495.83 1594.02Z"
+                              fill="#F6851B"
+                              stroke="#F6851B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1134.69 2337.11L934.194 2258.58L1631.48 2375.79L1134.69 2337.11Z"
+                              fill="#C0AD9E"
+                              stroke="#C0AD9E"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M265.465 1304.27L151.234 1157.91L194.666 1115.67L265.465 1304.27Z"
+                              fill="#763D16"
+                              stroke="#763D16"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1710.61 2288.92L1631.48 2375.79L934.194 2258.58L1710.61 2288.92Z"
+                              fill="#D7C1B3"
+                              stroke="#D7C1B3"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1748.09 2075.93L934.194 2258.58L1124.58 1861.75L1748.09 2075.93Z"
+                              fill="#E4761B"
+                              stroke="#E4761B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M934.194 2258.58L1748.09 2075.93L1710.61 2288.92L934.194 2258.58Z"
+                              fill="#D7C1B3"
+                              stroke="#D7C1B3"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M137.55 866.982L110.777 409.462L686.098 538.567L137.55 866.982ZM194.665 1115.67L115.536 1035.35L169.082 980.618L194.665 1115.67Z"
+                              fill="#763D16"
+                              stroke="#763D16"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1289.38 1529.76L1422.65 1411.96L1403.61 1699.92L1289.38 1529.76Z"
+                              fill="#CD6116"
+                              stroke="#CD6116"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1422.65 1411.96L1289.38 1529.76L1095.43 1630.31L1422.65 1411.96Z"
+                              fill="#CD6116"
+                              stroke="#CD6116"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M2046.16 2041.42L2009.87 2014.65L1749.88 1676.72L2046.16 2041.42Z"
+                              fill="#F6851B"
+                              stroke="#F6851B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1095.43 1630.31L826.508 1399.47L1422.65 1411.96L1095.43 1630.31Z"
+                              fill="#CD6116"
+                              stroke="#CD6116"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1403.61 1699.92L1422.65 1411.96L1495.83 1594.02L1403.61 1699.92Z"
+                              fill="#E4751F"
+                              stroke="#E4751F"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M89.3589 912.199L137.55 866.982L169.083 980.618L89.3589 912.199Z"
+                              fill="#763D16"
+                              stroke="#763D16"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1403.61 1699.92L1095.43 1630.31L1289.38 1529.76L1403.61 1699.92Z"
+                              fill="#233447"
+                              stroke="#233447"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M686.098 538.567L110.777 409.462L345.784 6.08252L686.098 538.567Z"
+                              fill="#763D16"
+                              stroke="#763D16"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1631.48 2375.79L1664.2 2465.03L1134.69 2337.12L1631.48 2375.79Z"
+                              fill="#C0AD9E"
+                              stroke="#C0AD9E"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1124.58 1861.75L1095.43 1630.31L1403.61 1699.92L1124.58 1861.75Z"
+                              fill="#F6851B"
+                              stroke="#F6851B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M826.508 1399.47L1095.43 1630.31L1124.58 1861.75L826.508 1399.47Z"
+                              fill="#E4751F"
+                              stroke="#E4751F"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1495.83 1594.02L1731.43 1580.33L2009.87 2014.65L1495.83 1594.02ZM826.508 1399.47L1124.58 1861.75L758.088 1879.59L826.508 1399.47Z"
+                              fill="#F6851B"
+                              stroke="#F6851B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1495.83 1594.02L1788.55 2039.64L1403.61 1699.92L1495.83 1594.02Z"
+                              fill="#E4751F"
+                              stroke="#E4751F"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1403.61 1699.92L1788.55 2039.64L1748.09 2075.93L1403.61 1699.92Z"
+                              fill="#F6851B"
+                              stroke="#F6851B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1748.09 2075.93L1124.58 1861.75L1403.61 1699.92L1748.09 2075.93ZM2009.87 2014.65L1788.55 2039.64L1495.83 1594.02L2009.87 2014.65Z"
+                              fill="#F6851B"
+                              stroke="#F6851B"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M2068.18 2224.07L1972.99 2415.05L1664.2 2465.03L2068.18 2224.07ZM1664.2 2465.03L1631.48 2375.79L1710.61 2288.92L1664.2 2465.03Z"
+                              fill="#C0AD9E"
+                              stroke="#C0AD9E"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1710.61 2288.92L1768.92 2265.72L1664.2 2465.03L1710.61 2288.92ZM1664.2 2465.03L1768.92 2265.72L2068.18 2224.07L1664.2 2465.03Z"
+                              fill="#C0AD9E"
+                              stroke="#C0AD9E"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M2009.87 2014.65L2083.05 2059.27L1860.54 2086.04L2009.87 2014.65Z"
+                              fill="#161616"
+                              stroke="#161616"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1860.54 2086.04L1788.55 2039.64L2009.87 2014.65L1860.54 2086.04ZM1834.96 2121.15L2105.66 2088.42L2068.18 2224.07L1834.96 2121.15Z"
+                              fill="#161616"
+                              stroke="#161616"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M2068.18 2224.07L1768.92 2265.72L1834.96 2121.15L2068.18 2224.07ZM1768.92 2265.72L1710.61 2288.92L1748.09 2075.93L1768.92 2265.72ZM1748.09 2075.93L1788.55 2039.64L1860.54 2086.04L1748.09 2075.93ZM2083.05 2059.27L2105.66 2088.42L1834.96 2121.15L2083.05 2059.27Z"
+                              fill="#161616"
+                              stroke="#161616"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1834.96 2121.15L1860.54 2086.04L2083.05 2059.27L1834.96 2121.15ZM1748.09 2075.93L1834.96 2121.15L1768.92 2265.72L1748.09 2075.93Z"
+                              fill="#161616"
+                              stroke="#161616"
+                              stroke-width="5.94955"
+                            />{" "}
+                            <path
+                              d="M1860.54 2086.04L1834.96 2121.15L1748.09 2075.93L1860.54 2086.04Z"
+                              fill="#161616"
+                              stroke="#161616"
+                              stroke-width="5.94955"
+                            />{" "}
+                          </g>{" "}
+                          <defs>
+                            {" "}
+                            <clipPath id="clip0_1512_1323">
+                              {" "}
+                              <rect
+                                width="2404"
+                                height="2500"
+                                fill="white"
+                                transform="translate(0.519043 0.132812)"
+                              />{" "}
+                            </clipPath>{" "}
+                          </defs>{" "}
+                        </svg>
+                        {connectMessage}
+                      </button>
+                    )}
+                    {defaultAccount != "" && (
+                      <div>
+                        <p className="text-1xl font-semibold whitespace-nowrap dark:text-white">
+                          My Address: {defaultAccount}
+                        </p>
+                        <p className="text-1xl font-semibold whitespace-nowrap dark:text-white">
+                          My Balance: {userBalance} BNB
+                        </p>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex items-center justify-end pb-6 pr-6 border-solid border-slate-200 rounded-b">
+                    <button
+                      className="bg-blue-500 text-black active:bg-blue-300 font-bold uppercase text-sm px-6 py-3 rounded-lg shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={() => setShowModal(false)}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : null}
+      </div>
+      {modalMetamask == true && (
+        <div>
+          <div className="grid place-items-center bg-black bg-opacity-60 fixed top-0 left-0 right-0 z-50 w-full p-4 overflw-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div className="relative bg-white rounded-lg shadow dark:bg-gray-700 w-96 grid place-items-center">
+              <div className="flex items-start p-4 border-b rounded-t dark:border-gray-600">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/6659/6659895.png"
+                  className="p-1 rounded h-11 w-11"
+                  alt="..."
+                />
+                <h3 className="text-xl font-semibold pt-2 pl-4 text-gray-900 dark:text-white">
+                  FAIL CONNECT
+                </h3>
+              </div>
