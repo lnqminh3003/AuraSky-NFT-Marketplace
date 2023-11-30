@@ -561,3 +561,34 @@ const abiContract = [
 				"name": "to",
 				"type": "address"
 			},
+            {
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFrom",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+];
+
+function contractAddress (){
+    return new web3.eth.Contract(abiContract as AbiItem[],global.contractAddress);
+}
+
+export default contractAddress;
