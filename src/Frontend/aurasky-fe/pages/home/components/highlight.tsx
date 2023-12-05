@@ -45,6 +45,13 @@ export default function Highlight() {
             }
         }, speed);
     }
+    // const ScreenSizeDetector = require("screen-size-detector");
+    // const screen = new ScreenSizeDetector();
+    // let slideWidth = screen.width * 0.2;
+    // screen.setMainCallback("widthchange", () => {
+    //   slideWidth = screen.width * 0.2;
+    // });
+
     if (typeof window != "undefined") {
         let slideWidth = document.getElementById("all")?.clientWidth;
 
