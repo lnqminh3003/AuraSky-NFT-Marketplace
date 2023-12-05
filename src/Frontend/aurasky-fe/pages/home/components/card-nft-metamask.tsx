@@ -21,4 +21,15 @@ var ImageURL = [
   function randomIntFromInterval(min:any, max:any) { 
       return Math.floor(Math.random() * (max - min + 1) + min)
   }
+  function CardNFTMetamask({ id, name }: { id: string; name: string }) {
+    const[image,setImage] = useState('');
   
+      console.log(id);
+    getDownloadURL(ref(storage,"files/" + id ))
+    .then((url) => {
+      console.log(url)
+      setImage(url);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
