@@ -18,37 +18,43 @@ var ImageURL = [
     "https://images.barrons.com/im-394091?width=1280&size=1",
     "https://www.businesstoday.com.my/wp-content/uploads/2022/02/monkey-art-NFT.png",
     ]
-  function randomIntFromInterval(min:any, max:any) { 
-      return Math.floor(Math.random() * (max - min + 1) + min)
-  }
-  function CardNFTMetamask({ id, name }: { id: string; name: string }) {
-    const[image,setImage] = useState('');
-  
-      console.log(id);
-    getDownloadURL(ref(storage,"files/" + id ))
-    .then((url) => {
-      console.log(url)
-      setImage(url);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-    return (
-      <Link href={{ pathname: "./nft", query: { id: id } }}>
-        <div className="relative flex-wrap w-60 h-60 inline-block">
-          <img
-            src= {image}
-            alt=""
-            className=" w-60 h-60 object-cover rounded-3xl"
-          />
-          <div className="absolute right-0 bottom-0 left-0 w-full h-32 overflow-hidden bg-gradient-to-t from-black opacity-75 rounded-b-3xl"></div>
-          {/* <div className="absolute right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-t from-black rounded-b-3xl"></div> */}
-          <div className="w-auto h-12 absolute bottom-8 left-3 right-3 rounded-xl p-1 px-3">
-            <div className="text-2xl font-bold text-white truncate">
-              ID: {id}
-            </div>
+
+function randomIntFromInterval(min:any, max:any) { 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function CardNFTMetamask({ id, name }: { id: string; name: string }) {
+  const[image,setImage] = useState('');
+
+    console.log(id);
+  getDownloadURL(ref(storage,"files/" + id ))
+  .then((url) => {
+    console.log(url)
+    setImage(url);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+
+  return (
+    <Link href={{ pathname: "./nft", query: { id: id } }}>
+      <div className="relative flex-wrap w-60 h-60 inline-block">
+        <img
+          src= {image}
+          alt=""
+          className=" w-60 h-60 object-cover rounded-3xl"
+        />
+        <div className="absolute right-0 bottom-0 left-0 w-full h-32 overflow-hidden bg-gradient-to-t from-black opacity-75 rounded-b-3xl"></div>
+        {/* <div className="absolute right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-gradient-to-t from-black rounded-b-3xl"></div> */}
+        <div className="w-auto h-12 absolute bottom-8 left-3 right-3 rounded-xl p-1 px-3">
+          <div className="text-2xl font-bold text-white truncate">
+            ID: {id}
           </div>
         </div>
-      </Link>
-    );
-  }
+      </div>
+    </Link>
+  );
+}
+
+export default CardNFTMetamask;
