@@ -1,5 +1,4 @@
-const Loading = ()
-  => {
+const Loading = () => {
   return <div>
     <div className="bg-blue-300 justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
       <div className="relative w-auto my-6 mx-auto max-w-3xl">
@@ -9,6 +8,9 @@ const Loading = ()
           </div>
         </div>
       </div>
+    </div>
+    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+  </div>
+}
 
-
-      export default Loading
+export default Loading
