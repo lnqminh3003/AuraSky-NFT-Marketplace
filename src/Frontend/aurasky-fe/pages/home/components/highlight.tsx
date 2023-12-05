@@ -8,27 +8,7 @@ export default function Highlight() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
-    useEffect(() => {
-        fetch(`${HOST}/nft/get-all`)
-            .then((res) => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setItems(result);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
-    }, []);
-
-    function sideScroll(
-        element: any,
-        direction: any,
-        speed: any,
-        distance: any,
-        step: any
+    
     ) {
         let scrollAmount = 0;
         var slideTimer = setInterval(function () {
