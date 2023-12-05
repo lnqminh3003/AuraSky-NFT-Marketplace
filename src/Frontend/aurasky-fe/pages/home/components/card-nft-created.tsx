@@ -1,5 +1,6 @@
 import Link from "next/link";
 import lodash from "lodash";
+
 function CardNFTCreated({ id, nft }: { id: string; nft: any }) {
   return (
     <Link href={{ pathname: "./sell", query: { id:id } }}>
@@ -20,4 +21,8 @@ function CardNFTCreated({ id, nft }: { id: string; nft: any }) {
           </div>
         </div>
       </div>
+    </Link>
+  );
+}
+
 export default CardNFTCreated;
