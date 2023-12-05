@@ -21,3 +21,7 @@ function Account({ address, nft }: any) {
         />
       </svg>
     </Link>
+  );
+}
+
+export default Account;
