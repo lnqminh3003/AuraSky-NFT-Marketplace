@@ -30,3 +30,5 @@ idMintedRoute.post("/update", async (req, res) => {
       res.status(500).json(err);
   }
 });
+
+export default idMintedRoute;
