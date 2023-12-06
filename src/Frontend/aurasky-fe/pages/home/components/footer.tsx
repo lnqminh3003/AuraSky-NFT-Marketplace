@@ -61,3 +61,28 @@ export default function Footer() {
                                 <i className="fa-brands fa-instagram text-2xl"></i>
                             </a>
                         </div>
+                        <div>
+                            <a
+                                href="https://r.mtdv.me/JzaKhxMPpK"
+                                className="mx-2"
+                            >
+                                <i className="fa-brands fa-twitter text-2xl"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://r.mtdv.me/JzaKhxMPpK"
+                                className="mx-2"
+                            >
+                                <i className="fa-brands fa-youtube text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="text-center text-white mt-10 text-xs">
+                <i className="fa-regular fa-copyright"></i> 2023 - 2024 CS300-AuraSky, VNU HCMUS
+            </div>
+        </div>
+    );
+}
