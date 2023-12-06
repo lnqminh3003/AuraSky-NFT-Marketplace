@@ -7,3 +7,5 @@ const userSchema = new mongoose.Schema({
   profilePicUrl: { type: String },
   address: { type: String },
 });
+
+export default mongoose.model("Users", userSchema);
