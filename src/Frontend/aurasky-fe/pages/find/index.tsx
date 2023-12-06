@@ -14,7 +14,17 @@ export default function FindPage(query: any) {
   const [error, setError] = useState<any>();
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItem] = useState<any>([]);
-  
+
+  useEffect(() => {
+    if (searchValue == undefined) return;
+    console.log(`${HOST}/nft/search/${searchValue}`);
+    axios.post(`${HOST}/nft/search/${searchValue}`).then((res) => {
+      console.log("return value", res);
+      setItem(res.data);
+      setIsLoaded(true);
+    });
+  }, [searchValue]);
+
   if (!isLoaded) return <Loading />;
   return (
     <div className="bg-[#F0F9FF] h-screen">
