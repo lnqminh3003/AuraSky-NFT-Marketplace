@@ -11,10 +11,6 @@ export default function FindPage(query: any) {
   const argument = router.query;
   const searchValue = argument.query;
 
-  const [error, setError] = useState<any>();
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [items, setItem] = useState<any>([]);
-
   useEffect(() => {
     if (searchValue == undefined) return;
     console.log(`${HOST}/nft/search/${searchValue}`);
