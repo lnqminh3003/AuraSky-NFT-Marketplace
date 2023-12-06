@@ -45,3 +45,19 @@ export default function Footer() {
                                 <i className="fa-brands fa-facebook-f"></i>
                             </a>
                         </div>
+                        <div>
+                            <a
+                                href="https://r.mtdv.me/JzaKhxMPpK"
+                                className="mx-2"
+                            >
+                                <i className="fa-regular fa-paper-plane"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://r.mtdv.me/JzaKhxMPpK"
+                                className="mx-2"
+                            >
+                                <i className="fa-brands fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
