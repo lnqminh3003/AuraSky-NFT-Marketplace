@@ -26,3 +26,22 @@ export default function Footer() {
                         project.
                     </div>
                 </div>
+                <div className="ml-auto text-white font-bold text-xl text-center">
+                    <div className="mb-5 text-2xl">Join our community</div>
+                    <div className="flex place-content-evenly items-center">
+                        <div>
+                            <a
+                                href="https://r.mtdv.me/JzaKhxMPpK"
+                                className="mx-2"
+                            >
+                                <i className="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://r.mtdv.me/JzaKhxMPpK"
+                                className="mx-2"
+                            >
+                                <i className="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
