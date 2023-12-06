@@ -13,3 +13,16 @@ export default function Footer() {
                           AuraSky
                       </span>
                   </div>
+                  <div className="text-white text-sm font-medium mt-5 w-96 text-justify">
+                        The world's smallest and dumbest market for crypto art
+                        trading, where you can create, buy, sell, and discover
+                        exclusive digital items. This site is used for
+                        educational purposes only, we do not take any
+                        responsibility for any e-commerce actions. Thanks to{" "}
+                        <a href="https://opensea.io" className="text-amber-200">
+                            OpenSea
+                        </a>
+                        , they have inspired a lot for us to complete this
+                        project.
+                    </div>
+                </div>
