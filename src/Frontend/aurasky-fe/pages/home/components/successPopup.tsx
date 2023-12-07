@@ -15,3 +15,9 @@ const SuccessPopup = () => {
             <h3 className="text-xl font-semibold pt-2 pl-4 text-gray-900 dark:text-white">
               Payment successful
             </h3>
+          </div>
+          <div className="p-6 space-y-6">
+            <p className="font-semibold text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              THANK YOU
+            </p>
+          </div>
