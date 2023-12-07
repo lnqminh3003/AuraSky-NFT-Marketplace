@@ -35,3 +35,5 @@ const SuccessPopup = () => {
     </div>
   );
 };
+
+export default SuccessPopup;
