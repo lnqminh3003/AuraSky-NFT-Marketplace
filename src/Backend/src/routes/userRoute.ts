@@ -15,3 +15,5 @@ userRoute.put("/create", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+export default userRoute;
