@@ -1,5 +1,3 @@
-# Based on the TA's comment for Software Architecture:
-## There is no comment in our report PA3.
-
-# We don't change anything in our Software Architecture:
-## So there is no update for Software Architecture in PA4.
+# Based on the TA's comment for this Software Architecture in PA3. After our group's review, we have some revisions for this Software Architecture in the PA4:
+    - Update Package diagram 
+    - List Classes in each package diagram in description 
