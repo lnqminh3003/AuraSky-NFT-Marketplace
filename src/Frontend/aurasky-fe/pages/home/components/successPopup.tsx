@@ -30,3 +30,8 @@ const SuccessPopup = () => {
               Let's go
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
