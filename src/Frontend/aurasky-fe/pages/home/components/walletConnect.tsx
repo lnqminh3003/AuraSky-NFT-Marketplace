@@ -615,3 +615,5 @@ const WalletConnect = () => {
         </div>
     );
 };
+
+export default WalletConnect;
