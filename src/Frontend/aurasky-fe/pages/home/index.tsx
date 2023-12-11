@@ -35,3 +35,21 @@ const HomePage = () => {
         }
       );
   }, []);
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <Loading />;
+  } else {
+    return (
+      <div className="bg-[#F0F9FF]">
+        <NavigationBar />
+        <Highlight />
+        <TrendingTop />
+        <Footer />
+      </div>
+    );
+  }
+};
+
+export default HomePage;
