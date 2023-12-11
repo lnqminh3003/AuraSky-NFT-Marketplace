@@ -14,9 +14,24 @@ import Footer from "./components/footer";
 import { HOST } from "../../utils/constant";
 
 const HomePage = () => {
-    /*
-      Fetch NFTs
-    */
-    const [error, setError] = useState<any | null>(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
+  /*
+    Fetch NFTs
+  */
+  const [error, setError] = useState<any | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch(`${HOST}/nft/get-all`)
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setItems(result);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
