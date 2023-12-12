@@ -3,7 +3,6 @@ import idMintedModel from "../models/idMintedModel";
 import log from "../utils/log";
 
 const idMintedRoute = Router();
-
 idMintedRoute.get("/get", async (req, res) => {
   try {
       log("get all id minted");
@@ -14,7 +13,6 @@ idMintedRoute.get("/get", async (req, res) => {
       res.status(500).json(err);
   }
 });
-
 idMintedRoute.post("/update", async (req, res) => {
   try {
       log("update id minted", req.body);

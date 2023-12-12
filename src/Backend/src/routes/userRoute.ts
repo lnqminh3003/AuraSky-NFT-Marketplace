@@ -4,7 +4,6 @@ import userModel from "../models/userModel";
 import log from "../utils/log";
 
 const userRoute = Router();
-
 userRoute.put("/create", async (req, res) => {
   try {
     log("create user", req.body);
@@ -15,5 +14,4 @@ userRoute.put("/create", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 export default userRoute;
