@@ -3,7 +3,6 @@ import moneyModel from "../models/moneyModel";
 import log from "../utils/log";
 
 const moneyRoute = Router();
-
 moneyRoute.get("/get/:address", async (req, res) => {
     try {
         log("get money", req.params.address);
@@ -14,7 +13,6 @@ moneyRoute.get("/get/:address", async (req, res) => {
         res.status(500).json(err);
       }
 });
-
 moneyRoute.put("/create", async (req, res) => {
     try {
       log("create money User", req.body);
@@ -25,8 +23,7 @@ moneyRoute.put("/create", async (req, res) => {
       res.status(500).json(err);
     }
   });
- 
-  moneyRoute.post("/update/:address", async (req, res) => {
+ moneyRoute.post("/update/:address", async (req, res) => {
     try {
       log("update money", req.params.address);
       let moneyUser = await moneyModel.findOneAndUpdate(
@@ -47,8 +44,6 @@ moneyRoute.put("/create", async (req, res) => {
       res.status(500).json(err);
     }
   });
-
-
 moneyRoute.delete("/delete/:address", async (req, res) => {
     try {
       log("delete money", req.params.address);
@@ -59,5 +54,4 @@ moneyRoute.delete("/delete/:address", async (req, res) => {
       res.status(500).json(err);
     }
   });
-
 export default moneyRoute;

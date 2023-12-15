@@ -2,9 +2,7 @@ import { Router } from "express";
 
 import nftModel from "../models/nftModel";
 import log from "../utils/log";
-
 const nftRoute = Router();
-
 nftRoute.put("/create", async (req, res) => {
   try {
     log("create nft", req.body);
@@ -15,7 +13,6 @@ nftRoute.put("/create", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 nftRoute.put("/create-many", async (req, res) => {
   try {
     log("create many nfts", req.body);
@@ -26,7 +23,6 @@ nftRoute.put("/create-many", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 nftRoute.get("/get/:id", async (req, res) => {
   try {
     log("get nft", req.params.id);
