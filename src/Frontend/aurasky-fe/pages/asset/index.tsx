@@ -12,8 +12,42 @@ import { HOST } from "../../utils/constant";
 import CardNFTMetamask from '../home/components/card-nft-metamask';
 
 declare let window: any;
-var firstTime = false;
-var arrayID: Array<String> = [];
+let firstTime = false;
+let arrayID: Array<String> = [];
+
+interface NFT {
+}
+
+export default function NFTPage() {
+  const router = useRouter();
+  const query = router.query;
+
+  const [error, setError] = useState<string | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [ownedNFTs, setOwnedNFTs] = useState<NFT[]>([]);
+  const [createdNFTs, setCreatedNFTs] = useState<NFT[]>([]);
+  const [arrayRender, setArrayRender] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const account = localStorage.getItem("account");
+      if (!account) return;
+      try {
+        const res = await fetch(`${HOST}/nft/getNFT/${account}`);
+        const data = await res.json();
+        setOwnedNFTs(data);
+        setIsLoaded(true);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (error) return <div>Error: {error}</div>;
+  if (!isLoaded) return <Loading />;
+}
 
 export default function NFTPage() {
   const router = useRouter();
@@ -63,6 +97,7 @@ export default function NFTPage() {
       });
       firstTime = true;
     }
+    
 
     var address = localStorage.getItem("account")!.toString();
     const chain = EvmChain.SEPOLIA;
