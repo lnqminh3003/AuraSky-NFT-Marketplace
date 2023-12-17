@@ -1,4 +1,5 @@
 import axios from "axios";
+import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NavigationBar from "../../components/navigationbar";
@@ -6,24 +7,43 @@ import { HOST } from "../../utils/constant";
 import CardNFT from "../home/components/card-nfts";
 import Loading from "../home/components/loading";
 
+interface Item {
+  // Define the shape of your data here
+}
+
 export default function FindPage(query: any) {
   const router = useRouter();
   const argument = router.query;
   const searchValue = argument.query;
 
-  const [error, setError] = useState<any>();
+  const [error, setError] = useState<string | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [items, setItem] = useState<any>([]);
+  const [items, setItems] = useState<Item[]>([]);
 
   useEffect(() => {
-    if (searchValue == undefined) return;
-    console.log(`${HOST}/nft/search/${searchValue}`);
-    axios.post(`${HOST}/nft/search/${searchValue}`).then((res) => {
-      console.log("return value", res);
-      setItem(res.data);
-      setIsLoaded(true);
-    });
+    const fetchData = async () => {
+      if (searchValue == undefined) return;
+      console.log(`${HOST}/nft/search/${searchValue}`);
+      try {
+        const res = await axios.post(`${HOST}/nft/search/${searchValue}`);
+        console.log("return value", res);
+        setItems(res.data);
+        setIsLoaded(true);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchData();
   }, [searchValue]);
+
+  if (error) return <div>Error: {error}</div>;
+  if (!isLoaded) return <Loading />;
+  return (
+    <div className="bg-[#F0F9FF] h-screen">
+    // Rest of your component
+  );
+}
 
   if (!isLoaded) return <Loading />;
   return (
