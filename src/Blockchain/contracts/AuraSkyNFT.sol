@@ -9,7 +9,6 @@ contract AuraSkyNFT is Ownable,ERC721
 {
     address public host;
     string key = "minh";
-
     constructor ()  ERC721("AuraSky NFT","AuraSkyNFT") Ownable()
     {
         host = msg.sender;
