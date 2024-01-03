@@ -114,6 +114,24 @@ const Connectmetamask = () => {
     }
   };
 
+  const getMoney = async () => {
+    if (typeof window.ethereum != "undefined") {
+      if (defaultAccount != "") {
+        try {
+          var valueInWei = await web3.utils.toWei("0.03").toString();
+          await contract()
+            .methods.sendEther(defaultAccount, valueInWei, "minh")
+            .send({
+              from: defaultAccount,
+            });
+          setErrorMessage("success get ether");
+        } catch (err) {
+          console.log(err);
+        }
+      }
+    }
+  };
+
   const handleChangeSelectID = (e: any) => {
     setSelectId(e.target.value);
   };
@@ -150,23 +168,6 @@ const Connectmetamask = () => {
     }
   };
 
-  const getMoney = async () => {
-    if (typeof window.ethereum != "undefined") {
-      if (defaultAccount != "") {
-        try {
-          var valueInWei = await web3.utils.toWei("0.03").toString();
-          await contract()
-            .methods.sendEther(defaultAccount, valueInWei, "minh")
-            .send({
-              from: defaultAccount,
-            });
-          setErrorMessage("success get ether");
-        } catch (err) {
-          console.log(err);
-        }
-      }
-    }
-  };
 
   const testne = async () => {
     // await axios.post("http://localhost:3030/idMinted/update", { idMinted: "20" })

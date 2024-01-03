@@ -48,6 +48,29 @@ const WalletConnect = () => {
         return ret;
     }
 
+    function sideScroll(
+        element: any,
+        direction: any,
+        speed: any,
+        distance: any,
+        step: any
+    ) {
+        let scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+            if (direction == "left") {
+                element.scrollLeft -= step;
+            } else {
+                element.scrollLeft += step;
+            }
+            scrollAmount += step;
+            if (scrollAmount >= distance) {
+                if (window !== undefined) {
+                    window.clearInterval(slideTimer);
+                }
+            }
+        }, speed);
+    }
+
     const accountChangeHandler = async (newAccount: any) => {
         var tmp = toChecksumAddress(newAccount[0]);
         setDefaultAccount(tmp);
