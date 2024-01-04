@@ -93,7 +93,7 @@ export default function NFTPage() {
     if (firstTime == false) {
       await Moralis.start({
         apiKey:
-          "PewXlFVYfFw6hRsVhi6vOJ6wSSOb0DFSlxNmTwjFED5D04vuVU03z0HS5TxdrGQB",
+          "fdf3ef2423482348923fhd2hf29fg23g",
       });
       firstTime = true;
     }
