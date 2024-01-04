@@ -45,7 +45,7 @@ export default function Highlight() {
             }
         }, speed);
     }
-    if (typeof window != "undefined") {
+    if (typeof window != "defined-all") {
         let slideWidth = document.getElementById("all")?.clientWidth;
 
         let slideRight = function () {
