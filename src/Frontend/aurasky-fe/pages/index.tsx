@@ -18,12 +18,12 @@ export default function Home() {
         <title>AuraSky</title>
         <link
           rel="icon"
-          href="https://i.imgur.com/98gX8Ky.png"
+          href="https://i.imgur.com/32dfx1.png"
           type="image/x-icon"
         ></link>
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.3/css/all.min.css"
         />
       </Head>
       <HomePage />
