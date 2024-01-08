@@ -17,9 +17,7 @@ function CardNFT({ id, nft }: { id: string; nft: any }) {
           <div className="text-2xl font-bold text-white truncate">
             {lodash.get(nft, "name")}
           </div>
-          <div className="text-sm  text-white">
-            Price: {lodash.get(nft, "price")} BNB
-          </div>
+          
         </div>
       </div>
     </Link>

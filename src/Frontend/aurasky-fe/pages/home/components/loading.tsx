@@ -9,6 +9,10 @@ const Loading = () => {
         </div>
       </div>
     </div>
+    <div className="text-sm  text-white">
+      Price: {lodash.get(nft, "price")} BNB
+    </div>
+
     <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
   </div>
 }
