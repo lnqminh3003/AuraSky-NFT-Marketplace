@@ -1,3 +1,4 @@
+
 import Moralis from "moralis";
 import { EvmChain } from "@moralisweb3/common-evm-utils";
 import { useRouter } from "next/router";
@@ -12,8 +13,42 @@ import { HOST } from "../../utils/constant";
 import CardNFTMetamask from '../home/components/card-nft-metamask';
 
 declare let window: any;
-var firstTime = false;
-var arrayID: Array<String> = [];
+let firstTime = false;
+let arrayID: Array<String> = [];
+
+interface NFT {
+}
+
+export default function NFTPage() {
+  const router = useRouter();
+  const query = router.query;
+
+  const [error, setError] = useState<string | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [ownedNFTs, setOwnedNFTs] = useState<NFT[]>([]);
+  const [createdNFTs, setCreatedNFTs] = useState<NFT[]>([]);
+  const [arrayRender, setArrayRender] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const account = localStorage.getItem("account");
+      if (!account) return;
+      try {
+        const res = await fetch(`${HOST}/nft/getNFT/${account}`);
+        const data = await res.json();
+        setOwnedNFTs(data);
+        setIsLoaded(true);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (error) return <div>Error: {error}</div>;
+  if (!isLoaded) return <Loading />;
+}
 
 export default function NFTPage() {
   const router = useRouter();
@@ -59,10 +94,11 @@ export default function NFTPage() {
     if (firstTime == false) {
       await Moralis.start({
         apiKey:
-          "PewXlFVYfFw6hRsVhi6vOJ6wSSOb0DFSlxNmTwjFED5D04vuVU03z0HS5TxdrGQB",
+          "fdf3ef2423482348923fhd2hf29fg23g",
       });
       firstTime = true;
     }
+    
 
     var address = localStorage.getItem("account")!.toString();
     const chain = EvmChain.SEPOLIA;
@@ -190,7 +226,7 @@ export default function NFTPage() {
                       NFT in Metamask
                     </Typography>
                   </div>
-                  <button onClick={GetNFT} className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <button onClick={GetNFT} className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-black-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                       Get NFT in Metamask
                   </button>
                   
@@ -216,3 +252,4 @@ export default function NFTPage() {
     );
   }
 }
+

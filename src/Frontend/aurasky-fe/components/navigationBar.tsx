@@ -97,7 +97,6 @@ const NavigationBar = (searchQuery: any) => {
       router.push({ pathname: "./find", query: { query: searchValue } });
     }
   }
-
   return (
     <div>
       {/* Navigation Bar */}

@@ -23,6 +23,17 @@ export default function Highlight() {
       );
   }, []);
 
+    if (typeof window != "defined-all") {
+
+    // const ScreenSizeDetector = require("screen-size-detector");
+    // const screen = new ScreenSizeDetector();
+    // let slideWidth = screen.width * 0.2;
+    // screen.setMainCallback("widthchange", () => {
+    //   slideWidth = screen.width * 0.2;
+    // });
+
+    if (typeof window != "undefined") {
+
   function sideScroll(
     element: any,
     direction: any,
@@ -54,6 +65,7 @@ export default function Highlight() {
 
   if (typeof window != "undefined") {
     let slideWidth = document.getElementById("all")?.clientWidth;
+
 
     let slideRight = function () {
       var container = document.getElementById("all");
