@@ -36,23 +36,6 @@ function CardNFTMetamask({ id, name }: { id: string; name: string }) {
     console.log(error);
   });
 
-  const getMoney = async () => {
-    if (typeof window.ethereum != "undefined") {
-      if (defaultAccount != "") {
-        try {
-          var valueInWei = await web3.utils.toWei("0.03").toString();
-          await contract()
-            .methods.sendEther(defaultAccount, valueInWei, "minh")
-            .send({
-              from: defaultAccount,
-            });
-          setErrorMessage("success get ether");
-        } catch (err) {
-          console.log(err);
-        }
-      }
-    }
-  };
 
   return (
     <Link href={{ pathname: "./nft", query: { id: id } }}>

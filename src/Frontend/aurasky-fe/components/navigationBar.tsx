@@ -24,7 +24,7 @@ const NavigationBar = (searchQuery: any) => {
     profile: false,
     wallet: false,
   });
-
+  
   const [defaultAccount, setDefaultAccount] = useState("");
   const [userBalance, setUserBalance] = useState("");
   const [connectMessage, setConnectMessage] = useState("Connect with MetaMask");
@@ -47,7 +47,8 @@ const NavigationBar = (searchQuery: any) => {
           accountChangeHandler(result);
         });
     } else {
-      setModalMetamask(true);
+      localStorage.setItem("account", "");
+     // setModalMetamask(true);
       console.log("Install Metamask");
     }
   };
@@ -67,7 +68,7 @@ const NavigationBar = (searchQuery: any) => {
 
     return ret;
   }
-  
+
   const accountChangeHandler = async (newAccount: any) => {
     var tmp = toChecksumAddress(newAccount[0]);
     setDefaultAccount(tmp);
@@ -96,7 +97,6 @@ const NavigationBar = (searchQuery: any) => {
       router.push({ pathname: "./find", query: { query: searchValue } });
     }
   }
-  
   return (
     <div>
       {/* Navigation Bar */}
@@ -510,7 +510,7 @@ const NavigationBar = (searchQuery: any) => {
                               stroke="#CD6116"
                               stroke-width="5.94955"
                             />{" "}
-                             <path
+                            <path
                               d="M1749.88 1676.72L1940.86 1793.33L2046.16 2041.42L1749.88 1676.72ZM826.508 1399.47L12.0146 1910.53L265.465 1304.27L826.508 1399.47ZM758.088 1879.59L12.0146 1910.53L826.508 1399.47L758.088 1879.59ZM1682.65 1403.04L1731.43 1580.33L1495.83 1594.02L1682.65 1403.04ZM1495.83 1594.02L1422.65 1411.96L1682.65 1403.04L1495.83 1594.02Z"
                               fill="#F6851B"
                               stroke="#F6851B"

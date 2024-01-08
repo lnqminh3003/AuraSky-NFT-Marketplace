@@ -1,3 +1,4 @@
+
 import Moralis from "moralis";
 import { EvmChain } from "@moralisweb3/common-evm-utils";
 import { useRouter } from "next/router";
@@ -251,3 +252,4 @@ export default function NFTPage() {
     );
   }
 }
+
