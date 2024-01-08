@@ -4,9 +4,8 @@ import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
-        <title>Seazle</title>
+    <> <Head>
+        <title>AuraSky</title>
       </Head>
       <Component {...pageProps} />
     </>
